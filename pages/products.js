@@ -6,7 +6,7 @@ export default function Products() {
       <Head>
         <title>Alle Produkte</title>
       </Head>
-      <h1>Produkte</h1>;
+      <h1>Produkte</h1>
     </>
   );
 }

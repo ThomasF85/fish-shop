@@ -6,7 +6,7 @@ export default function Categories() {
       <Head>
         <title>Alle Kategorien</title>
       </Head>
-      <h1>Kategorien</h1>;
+      <h1>Kategorien</h1>
     </>
   );
 }
