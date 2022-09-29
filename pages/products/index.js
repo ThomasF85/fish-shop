@@ -11,10 +11,10 @@ export default function Products() {
       <p>Liste aller Produkte</p>
       <ul>
         <li>
-          <Link href="/product/guppy">Guppy</Link>
+          <Link href="/products/guppy">Guppy</Link>
         </li>
         <li>
-          <Link href="/product/regenbogenfisch">Regenbogenfisch</Link>
+          <Link href="/products/regenbogenfisch">Regenbogenfisch</Link>
         </li>
       </ul>
     </>

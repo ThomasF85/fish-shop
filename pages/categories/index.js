@@ -11,10 +11,10 @@ export default function Categories() {
       <p>Liste aller Kategorien</p>
       <ul>
         <li>
-          <Link href="/category/meerwasser">Meerwasser</Link>
+          <Link href="/categories/meerwasser">Meerwasser</Link>
         </li>
         <li>
-          <Link href="/category/muscheln">Muscheln</Link>
+          <Link href="/categories/muscheln">Muscheln</Link>
         </li>
       </ul>
     </>
