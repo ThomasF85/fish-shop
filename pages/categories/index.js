@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { getAllCategories } from "../services/categoriesService";
+import { getAllCategories } from "../../services/categoriesService";
 
 export function getStaticProps() {
   const categories = getAllCategories();
