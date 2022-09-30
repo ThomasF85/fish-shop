@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { getProductById } from "../../services/productService";
 
-export function getServerSideProps(context) {
+export async function getServerSideProps(context) {
   const { id } = context.params;
-  const product = getProductById(id);
+  const product = await getProductById(id);
 
   return {
     props: { ...product },

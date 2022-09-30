@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { getAllProducts } from "../../services/productService";
 
-export function getServerSideProps() {
-  const products = getAllProducts();
+export async function getServerSideProps() {
+  const products = await getAllProducts();
 
   return {
     props: { products },
