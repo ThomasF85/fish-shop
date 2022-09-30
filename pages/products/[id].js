@@ -19,7 +19,7 @@ export default function Product({ name, description, price, category }) {
       <h1>Produkt: {name}</h1>
       <h2>Beschreibung</h2>
       <p>{description}</p>
-      <p>Kategorie {category}</p>
+      <p>Kategorie: {category}</p>
       <p>Preis: {price} €</p>
     </>
   );
