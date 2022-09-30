@@ -32,6 +32,7 @@ const products = [
     name: "Kaiserfisch",
     description: "Ein tagaktiver Einzelgänger",
     price: 90,
+    category: "Meerwasser",
   },
   {
     id: "6",
