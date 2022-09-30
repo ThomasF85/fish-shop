@@ -6,15 +6,11 @@ export function getServerSideProps(context) {
   const product = getProductById(id);
 
   return {
-    props: {
-      name: product.name,
-      description: product.description,
-      price: product.price,
-    },
+    props: { ...product },
   };
 }
 
-export default function Product({ name, description, price }) {
+export default function Product({ name, description, price, category }) {
   return (
     <>
       <Head>
@@ -23,6 +19,7 @@ export default function Product({ name, description, price }) {
       <h1>Produkt: {name}</h1>
       <h2>Beschreibung</h2>
       <p>{description}</p>
+      <p>Kategorie {category}</p>
       <p>Preis: {price} €</p>
     </>
   );
