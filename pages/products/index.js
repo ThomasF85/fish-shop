@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { getAllProducts } from "../../services/productService";
 
 export async function getServerSideProps() {
@@ -11,6 +12,8 @@ export async function getServerSideProps() {
 }
 
 export default function Products({ products }) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -25,6 +28,9 @@ export default function Products({ products }) {
           </li>
         ))}
       </ul>
+      <button type="button" onClick={() => router.push("/products/create")}>
+        add a new product
+      </button>
     </>
   );
 }
